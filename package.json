@@ -1,0 +1,25 @@
+{
+  "name": "prompt-eval-atelier",
+  "private": true,
+  "version": "1.0.0",
+  "description": "提示词评测工坊：用固定案例比较提示词 A/B，按清晰度、依据性与合规做评审并导出 Markdown。",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && tsx scripts/check.ts && vite build",
+    "preview": "vite preview",
+    "check": "tsx scripts/check.ts"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.12"
+  }
+}
